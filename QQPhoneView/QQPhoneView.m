@@ -217,7 +217,7 @@
 -(void)screenShots
 {
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(kScreenWidth, kScreenHeight), NO, 1);
-    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    [_removeView drawViewHierarchyInRect:CGRectMake(0,0,CGRectGetWidth(_removeView.frame),CGRectGetHeight(_removeView.frame))afterScreenUpdates:NO];
     UIImage *shotImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     UIImage *image = [UIImage imageWithCGImage:CGImageCreateWithImageInRect([shotImage CGImage], _headerFrame)];
