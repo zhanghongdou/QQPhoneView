@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7eS-8w-hnY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zri-60-LXZ">
+            <objects>
+                <viewController id="7eS-8w-hnY" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v7S-TZ-WJW"/>
+                        <viewControllerLayoutGuide type="bottom" id="wdN-wh-xVx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uZF-Mq-nJV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxL-LD-67e">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tIm-PM-WKr"/>
+                                    <constraint firstAttribute="width" constant="50" id="wYu-G8-r5f"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="aio_icons_freeaudio"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="7eS-8w-hnY" eventType="touchUpInside" id="DE4-yl-Oei"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oxL-LD-67e" firstAttribute="centerY" secondItem="uZF-Mq-nJV" secondAttribute="centerY" id="dxX-fX-VQi"/>
+                            <constraint firstItem="oxL-LD-67e" firstAttribute="centerX" secondItem="uZF-Mq-nJV" secondAttribute="centerX" id="wLZ-nJ-2B1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rzf-95-R1f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="380"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aio_icons_freeaudio" width="50" height="50"/>
+    </resources>
+</document>
