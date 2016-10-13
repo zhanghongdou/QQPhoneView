@@ -8,7 +8,7 @@
 
 #import "QQPhoneView.h"
 
-@interface QQPhoneView ()
+@interface QQPhoneView ()<CAAnimationDelegate>
 {
     //缩小之后显示的imageView
     UIImageView *_smallerImageView;
